@@ -1,14 +1,14 @@
 WITH CTE AS
-(SELECT 
-id,
+(
+SELECT 
 num,
-LEAD(num) OVER(ORDER BY id) as nex_num,
+LEAD(num,1) OVER(ORDER BY id) as next_num,
 LEAD(num,2) OVER(ORDER BY id) as next_next_num
 FROM Logs
 )
 
 SELECT 
-DISTINCT c.num as ConsecutiveNums
-FROM CTE c
-WHERE c.num = c.nex_num AND c.nex_num = c.next_next_num
+DISTINCT num AS ConsecutiveNums
+FROM CTE
+WHERE num = next_num AND next_num = next_next_num
 ;
