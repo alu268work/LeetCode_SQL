@@ -1,18 +1,21 @@
-# Write your MySQL query statement below
 WITH CTE AS
 (
-    SELECT d.name as Department,
+    SELECT e.id,
     e.name as Employee,
-    salary,
+    e.salary as Salary,
+    d.name as Department,
     DENSE_RANK() OVER(PARTITION BY e.departmentId ORDER BY e.salary DESC) AS r
     FROM Employee e
     JOIN Department d
     ON e.departmentId = d.id
+    GROUP BY e.id,
+    e.name,
+    e.salary,d.name
 )
 
-SELECT Department,
+SELECT Department, 
 Employee,
-salary 
-FROM CTE
+Salary 
+FROM CTE 
 WHERE r <= 3
 ;
