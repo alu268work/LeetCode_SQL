@@ -1,21 +1,17 @@
 WITH CTE AS
 (
-    SELECT e.id,
-    e.name as Employee,
-    e.salary as Salary,
-    d.name as Department,
-    DENSE_RANK() OVER(PARTITION BY e.departmentId ORDER BY e.salary DESC) AS r
+    SELECT d.name AS Department,
+    e.name AS Employee,
+    e.salary AS Salary,
+    DENSE_RANK() OVER(PARTITION BY e.departmentId ORDER BY salary DESC)AS r
     FROM Employee e
     JOIN Department d
     ON e.departmentId = d.id
-    GROUP BY e.id,
-    e.name,
-    e.salary,d.name
+    GROUP BY 1,2,3
 )
-
-SELECT Department, 
+SELECT Department,
 Employee,
-Salary 
-FROM CTE 
+Salary
+FROM CTE
 WHERE r <= 3
 ;
