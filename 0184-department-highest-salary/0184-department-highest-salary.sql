@@ -1,17 +1,15 @@
+# Write your MySQL query statement below
 WITH CTE AS
 (
-    SELECT d.name AS Department,
-    e.name AS Employee,
-    e.salary AS Salary,
-    DENSE_RANK() OVER(PARTITION BY e.departmentId ORDER BY salary DESC)AS r
-    FROM Employee e
-    JOIN Department d
-    ON e.departmentId = d.id
-    GROUP BY 1,2,3
+    SELECT *,
+    DENSE_RANK() OVER(PARTITION BY departmentId ORDER BY salary DESC) AS r
+    FROM Employee
 )
-SELECT Department,
-Employee,
-Salary
-FROM CTE
-WHERE r = 1
+SELECT d.name AS Department,
+c.name AS Employee,
+c.salary
+FROM CTE c
+JOIN Department d
+ON c.departmentId = d.id
+WHERE r=1
 ;
