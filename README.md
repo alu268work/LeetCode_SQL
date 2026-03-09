@@ -11,4 +11,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0178-rank-scores](https://github.com/alu268work/LeetCode_SQL/tree/main/0178-rank-scores/) | Medium |
 | [0181-employees-earning-more-than-their-managers](https://github.com/alu268work/LeetCode_SQL/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0182-duplicate-emails](https://github.com/alu268work/LeetCode_SQL/tree/main/0182-duplicate-emails/) | Easy |
+| [0183-customers-who-never-order](https://github.com/alu268work/LeetCode_SQL/tree/main/0183-customers-who-never-order/) | Easy |
 <!---LeetCode Topics End-->
