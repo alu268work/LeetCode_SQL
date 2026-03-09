@@ -9,4 +9,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0175-combine-two-tables](https://github.com/alu268work/LeetCode_SQL/tree/main/0175-combine-two-tables/) | Easy |
 | [0176-second-highest-salary](https://github.com/alu268work/LeetCode_SQL/tree/main/0176-second-highest-salary/) | Medium |
 | [0178-rank-scores](https://github.com/alu268work/LeetCode_SQL/tree/main/0178-rank-scores/) | Medium |
+| [0181-employees-earning-more-than-their-managers](https://github.com/alu268work/LeetCode_SQL/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 <!---LeetCode Topics End-->
