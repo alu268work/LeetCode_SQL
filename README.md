@@ -21,4 +21,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0596-classes-with-at-least-5-students](https://github.com/alu268work/LeetCode_SQL/tree/main/0596-classes-with-at-least-5-students/) | Easy |
 | [0607-sales-person](https://github.com/alu268work/LeetCode_SQL/tree/main/0607-sales-person/) | Easy |
 | [0608-tree-node](https://github.com/alu268work/LeetCode_SQL/tree/main/0608-tree-node/) | Medium |
+| [0610-triangle-judgement](https://github.com/alu268work/LeetCode_SQL/tree/main/0610-triangle-judgement/) | Easy |
 <!---LeetCode Topics End-->
