@@ -31,4 +31,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1084-sales-analysis-iii](https://github.com/alu268work/LeetCode_SQL/tree/main/1084-sales-analysis-iii/) | Easy |
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/alu268work/LeetCode_SQL/tree/main/1141-user-activity-for-the-past-30-days-i/) | Easy |
 | [1148-article-views-i](https://github.com/alu268work/LeetCode_SQL/tree/main/1148-article-views-i/) | Easy |
+| [1164-product-price-at-a-given-date](https://github.com/alu268work/LeetCode_SQL/tree/main/1164-product-price-at-a-given-date/) | Medium |
 <!---LeetCode Topics End-->
